@@ -1,0 +1,55 @@
+/*
+    Code by : Projects_learner
+    Project name : LCD TFT Display using Ardino UNO
+    Modified Date : 03-06-2024
+    Website : https://projectslearner.com/learn/arduino-uno-lcd-tft-display
+*/
+
+#include <TFT.h>  // Arduino LCD library
+#include <SPI.h>
+
+// Pin definition for the Uno
+#define cs   10
+#define dc   9
+#define rst  8
+
+// Create an instance of the TFT library
+TFT TFTscreen = TFT(cs, dc, rst);
+
+// Buffer to store the sensor reading as a string
+char sensorPrintout[5];
+
+void setup() {
+  // Initialize the TFT screen
+  TFTscreen.begin();
+
+  // Clear the screen with a black background
+  TFTscreen.background(0, 0, 0);
+
+  // Set the font color to white and size to 2 for the static text
+  TFTscreen.stroke(255, 255, 255);
+  TFTscreen.setTextSize(2);
+  TFTscreen.text("Sensor Value:", 0, 0);
+
+  // Set the font size to 5 for the sensor value
+  TFTscreen.setTextSize(5);
+}
+
+void loop() {
+  // Read the value of the sensor on A0
+  int sensorValue = analogRead(A0);
+
+  // Convert the sensor reading to a string
+  snprintf(sensorPrintout, sizeof(sensorPrintout), "%d", sensorValue);
+
+  // Display the sensor value
+  TFTscreen.stroke(255, 255, 255);
+  TFTscreen.text(sensorPrintout, 0, 20);
+
+  // Wait for a quarter second
+  delay(250);
+
+  // Erase the previous sensor value by overwriting it with a black background
+  TFTscreen.stroke(0, 0, 0);
+  TFTscreen.text(sensorPrintout, 0, 20);
+}
