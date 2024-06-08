@@ -63,15 +63,15 @@ This project demonstrates how to interface a TFT LCD display with an Arduino to 
 2. **User Interfaces:** Create dynamic user interfaces for projects requiring data visualization.
 3. **Educational Tools:** Teach the basics of interfacing TFT LCDs with microcontrollers.
 
-## Support
+---
 
-For any issues or further assistance, please contact us:
+### Whether you're working on electronics projects, IoT applications, or robotics innovations, Projects Learner is your go-to platform for guidance and expertise.
 
-- 🌐 [Projects Learner](https://projectslearner.com)
-- 📧 Email: projectslearner@gmail.com
-- 📸 Instagram
-- 📘 Facebook
-- ▶️ YouTube
-- 📘 LinkedIn
+🌐 [projectslearner.com](https://www.projectslearner.com)  
+📧 [projectslearner@gmail.com](mailto:projectslearner@gmail.com)  
+📸 [Instagram](https://www.instagram.com/projectslearner/)  
+📘 [Facebook](https://www.facebook.com/projectslearner)  
+▶️ [YouTube](https://www.youtube.com/@ProjectsLearner)  
+📘 [LinkedIn](https://www.linkedin.com/in/projectslearner)  
 
-Made for you with ❣️ from ProjectsLearner.
+## Made for you with ❣️ from ProjectsLearner
